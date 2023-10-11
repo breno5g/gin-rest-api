@@ -6,10 +6,7 @@ import (
 
 func Init() {
 	r := gin.Default()
-	r.GET("/", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "Hello, World!",
-		})
-	})
+	initializeRoutes(r)
+
 	r.Run(":3001")
 }
