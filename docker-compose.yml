@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  api:
+    build: .
+    image: gin-rest-api:latest
+    ports:
+      - "3001:3001"
+    environment:
+      - GIN_MODE=release
