@@ -21,10 +21,6 @@ var (
 	green  = "\033[32m"
 	yellow = "\033[33m"
 	blue   = "\033[34m"
-	purple = "\033[35m"
-	cyan   = "\033[36m"
-	gray   = "\033[37m"
-	white  = "\033[97m"
 )
 
 func NewLogger(prefix string) *Logger {
@@ -33,8 +29,8 @@ func NewLogger(prefix string) *Logger {
 
 	return &Logger{
 		debug:   log.New(writer, fmt.Sprintf("%s %s %s: ", blue, "DEBUG", reset), logger.Flags()),
-		info:    log.New(writer, fmt.Sprintf("%s %s %s: ", yellow, "INFO", reset), logger.Flags()),
-		warning: log.New(writer, fmt.Sprintf("%s %s %s: ", red, "WARNING", reset), logger.Flags()),
+		info:    log.New(writer, fmt.Sprintf("%s %s %s: ", green, "INFO", reset), logger.Flags()),
+		warning: log.New(writer, fmt.Sprintf("%s %s %s: ", yellow, "WARNING", reset), logger.Flags()),
 		error:   log.New(writer, fmt.Sprintf("%s %s %s: ", red, "ERROR", reset), logger.Flags()),
 		writer:  writer,
 	}
