@@ -1,0 +1,198 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2023-10-12T14:24:28.601Z",
+  "__export_source": "insomnia.desktop.app:v2023.5.8",
+  "resources": [
+    {
+      "_id": "req_5ab072bcb0674cbc917138387ed3d5ec",
+      "parentId": "wrk_c74cc3b304284acb84be2b84e21f3c05",
+      "modified": 1697066850826,
+      "created": 1697066835138,
+      "url": "{{ _.url }}/task",
+      "name": "List",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1697066835138,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_c74cc3b304284acb84be2b84e21f3c05",
+      "parentId": null,
+      "modified": 1697066805218,
+      "created": 1697066805218,
+      "name": "Gin Rest API",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_0bb0465030cf496097b72f3b1c7c94a6",
+      "parentId": "wrk_c74cc3b304284acb84be2b84e21f3c05",
+      "modified": 1697072280614,
+      "created": 1697066986261,
+      "url": "{{ _.url }}/task",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"Teste do bão\",\n\t\"description\": \"descrição da task\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1697047087430.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_2f08621d4f5741c4b5a78a2c787c873e",
+      "parentId": "wrk_c74cc3b304284acb84be2b84e21f3c05",
+      "modified": 1697066942841,
+      "created": 1697066937407,
+      "url": "{{ _.url }}/task/1",
+      "name": "Get",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1697027339723,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_6ff39aaf154f4daa8d8b789a1e6a0840",
+      "parentId": "wrk_c74cc3b304284acb84be2b84e21f3c05",
+      "modified": 1697072906975,
+      "created": 1697066954340,
+      "url": "{{ _.url }}/task/2",
+      "name": "Edit",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"teste 2\",\n\t\"description\": \"descrição 2\",\n\t\"completed\": true\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1697007592015.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_13c426f80eb34bf892e71aeec64d6144",
+      "parentId": "wrk_c74cc3b304284acb84be2b84e21f3c05",
+      "modified": 1697066973069,
+      "created": 1697066970637,
+      "url": "{{ _.url }}/task/1",
+      "name": "Delete",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1696997718161.75,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_8c638a74a49150ccc58306e0759dd367175c1740",
+      "parentId": "wrk_c74cc3b304284acb84be2b84e21f3c05",
+      "modified": 1697066832468,
+      "created": 1697066805221,
+      "name": "Base Environment",
+      "data": {
+        "url": "localhost:3001/api/v1"
+      },
+      "dataPropertyOrder": {
+        "&": ["url"]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1697066805221,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_8c638a74a49150ccc58306e0759dd367175c1740",
+      "parentId": "wrk_c74cc3b304284acb84be2b84e21f3c05",
+      "modified": 1697066805223,
+      "created": 1697066805223,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    }
+  ]
+}
