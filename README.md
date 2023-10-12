@@ -1,12 +1,20 @@
-# Go REST API with Docker, SQLite, Gin
+# 🚀 Go REST API with Docker, SQLite, Gin
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/breno5g/gin-rest-api/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/breno5g/gin-rest-api)](https://github.com/breno5g/gin-rest-api/issues)
+[![GitHub stars](https://img.shields.io/github/stars/breno5g/gin-rest-api)](https://github.com/breno5g/gin-rest-api/stargazers)
+![Go](https://img.shields.io/badge/Go-1.21.1-blue)
+![Docker](https://img.shields.io/badge/Docker-20.10.8-blue)
+![SQLite](https://img.shields.io/badge/SQLite-3.36.0-blue)
+![Gin](https://img.shields.io/badge/Gin-1.9.1-blue)
 
 This is a simple REST API project built in Go, utilizing Docker, SQLite, and Gin, to manage a to-do list with full CRUD (Create, Read, Update, Delete) functionality.
 
-## Prerequisites
+## 🛠️ Prerequisites
 
 Before running this project, you'll need to have Docker Compose installed on your system.
 
-## Project Structure
+## 📂 Project Structure
 
 ```css
 go-rest-api/
@@ -25,7 +33,6 @@ go-rest-api/
 ├─ main.go
 ├─ makefile
 ├─ request-insomnia.json
-
 ```
 
 - **config/**: Contains configuration files or settings for your Go application.
@@ -60,7 +67,7 @@ go-rest-api/
 
 This structure helps organize your Go REST API project into various components, making it easier to maintain, test, and deploy. It's a good practice to keep your codebase organized and well-documented for easier collaboration and future development.
 
-## Running the Project
+## 🚀 Running the Project
 
 To run the project:
 
@@ -84,15 +91,15 @@ To run the project:
 
 5. Use the included Insomnia requests file (`insomnia_requests.json`) to test the API endpoints. Import the requests into Insomnia for testing.
 
-## Documentation
+## 📝 Documentation
 
 The Swagger documentation provides detailed information about the available API endpoints and their usage. You can access it at `http://localhost:8080/swagger/index.html` once the application is running.
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contributing
+## 🤝 Contributing
 
 If you wish to contribute to this project or report any issues, please create a pull request or open an issue on the project's GitHub repository.
 
